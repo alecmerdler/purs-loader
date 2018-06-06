@@ -307,7 +307,7 @@ module.exports = function purescriptLoader(source, map) {
         })
         .then(() => {
           if (options.bundle) {
-            return bundle(options, CACHE_VAR.bundleModules);
+            return bundle(psModule, options, CACHE_VAR.bundleModules);
           }
         })
         .then(() =>
